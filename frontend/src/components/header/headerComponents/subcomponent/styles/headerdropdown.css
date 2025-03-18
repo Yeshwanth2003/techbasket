@@ -1,0 +1,59 @@
+.hdr-dd-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  position: relative;
+  & input {
+    display: none;
+  }
+}
+.hdr-dd-wrapper:has(input:checked) .hdr-dd-options {
+  display: block;
+}
+.hdr-dd-options {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: -100%;
+  height: max-content;
+  width: max-content;
+  border-radius: 10px;
+  z-index: 1;
+  overflow: hidden;
+  & ul {
+    width: max-content;
+    height: max-content;
+    & li {
+      list-style: none;
+      padding: 10px 50px 10px 20px;
+      cursor: pointer;
+    }
+    & li:hover {
+      background-color: rgba(38, 0, 255, 0.181);
+    }
+  }
+}
+.hdr-dd-currnet {
+  color: white;
+  position: relative;
+  cursor: pointer;
+  padding: 0 10px;
+  & ::after {
+    position: absolute;
+    content: "\25be";
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media (max-device-width: 1000px), (width<1000px) {
+  .hdr-dd-wrapper {
+    font-size: 14px;
+  }
+  .hdr-dd-options ul li {
+    padding: 5px 50px 5px 20px;
+  }
+}

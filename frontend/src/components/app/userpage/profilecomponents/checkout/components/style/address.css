@@ -1,0 +1,214 @@
+.check-addr-wrapper {
+  width: 100%;
+  height: max-content;
+  background-color: ghostwhite;
+}
+.check-addr-header {
+  height: max-content;
+  padding: 15px;
+  & h2 {
+    color: #343a40;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+.check-addr-body-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  gap: 5px;
+}
+/* temp */
+.check-addr-cnts2-div {
+  width: 45%;
+  /* background-color: rebeccapurple; */
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.check-addr-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  padding: 0 10px;
+  font-size: 17px;
+  color: rgb(90, 95, 126);
+}
+.check-addr-ctns-div {
+  width: 50%;
+  height: 80vh;
+  /* background-color: yellow; */
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "indone indtwo"
+    "indthree indthree"
+    "indfour indfour"
+    "indfive indsix"
+    "indseven indseven"
+    "indeigth indeigth"
+    "indnine indnine"
+    "indten indten";
+}
+.check-addr-input-wrpr:nth-child(1) {
+  grid-area: indone;
+}
+.check-addr-input-wrpr:nth-child(2) {
+  grid-area: indtwo;
+}
+.check-addr-input-wrpr:nth-child(3) {
+  grid-area: indthree;
+}
+.check-addr-input-wrpr:nth-child(4) {
+  grid-area: indfour;
+}
+.check-addr-input-wrpr:nth-child(5) {
+  grid-area: indfive;
+}
+.check-addr-input-wrpr:nth-child(6) {
+  grid-area: indsix;
+}
+.check-addr-input-wrpr:nth-child(7) {
+  grid-area: indseven;
+}
+.check-addr-input-wrpr:nth-child(8) {
+  grid-area: indeigth;
+}
+.check-addr-input-wrpr:nth-child(9) {
+  grid-area: indnine;
+}
+.check-addr-input-wrpr:nth-child(10) {
+  grid-area: indten;
+}
+.check-addr-input-wrpr {
+  height: 60px;
+  background-color: #e3e6e6;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #acacbe;
+}
+.check-addr-footer {
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+}
+.check-addr-ftr-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  color: #343a40;
+}
+.chech-add-cnts2-one {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check-add-cnts-one-cnts {
+  height: 100%;
+  width: 99%;
+}
+.check-addr-cnts-one-cnts-heading {
+  & h2 {
+    color: #343a40;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+.check-addr-cnts-one-cnts-body {
+  width: 100%;
+  height: calc(100% - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check-addr-cnts-one-cnts-body-rnnd {
+  height: 75%;
+  width: 100%;
+  overflow: scroll;
+}
+.check-addr-cnts-one-cnts-body-rnnr {
+  display: flex;
+  height: 100%;
+  gap: 5px;
+}
+.check-addr-cnts-one-cnts-body-rnnd::-webkit-scrollbar {
+  display: none;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+.chech-add-cnts2-two {
+  height: 30%;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.check-add-cnts2-header h3 {
+  color: var(--darkblue);
+}
+.check-add-cnts2-two-cnt label {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin: 5px 0;
+  cursor: pointer;
+  & p {
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+  }
+}
+.check-add-cnts2-proceed {
+  display: flex;
+  justify-content: end;
+  padding: 0 50px;
+
+  & button {
+    background-color: var(--darkblue);
+    border: none;
+    outline: none;
+    color: ghostwhite;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
+@media (max-device-width: 1000px), (width<1000px) {
+  .check-addr-body-div {
+    flex-direction: column;
+    padding: 0 5px;
+    gap: 20px;
+  }
+  .check-addr-ctns-div {
+    grid-gap: 8px;
+    width: 100%;
+    height: max-content;
+  }
+  .check-addr-cnts2-div {
+    width: 100%;
+  }
+  .check-add-cnts2-proceed {
+    padding: 0 10px;
+  }
+  .chech-add-cnts2-two {
+    padding: 10px;
+  }
+}

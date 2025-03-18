@@ -1,0 +1,59 @@
+.toggler-wrapper {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  bottom: 30%;
+  right: 20%;
+  /* transform: translateY(5%); */
+}
+.toogler-heading {
+  text-align: center;
+  font-size: 12px;
+  color: gray;
+  height: 35%;
+}
+.toggler-body {
+  height: calc(100% - 35%);
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.toggler-holder {
+  width: 50%;
+  & input {
+    display: none;
+  }
+  & label {
+    cursor: pointer;
+  }
+}
+.toggler-switch {
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  background-color: rgb(182, 180, 180);
+  position: relative;
+}
+.toggler-ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--darkblue);
+  border-radius: 100%;
+  top: 50%;
+  transform: translateY(-50%) translateX(100%);
+  transition: 0.2s;
+  right: 100%;
+}
+.toggler-holder:has(input[type="checkbox"]:checked) .toggler-ball {
+  right: 0;
+  transform: translateY(-50%) translateX(0);
+}
+@media (max-device-width: 1000px), (width<1000px) {
+  .toggler-wrapper {
+    bottom: 25%;
+    right: 0;
+  }
+}

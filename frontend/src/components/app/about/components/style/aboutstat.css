@@ -1,0 +1,35 @@
+.abtstat-wrapper {
+  height: 200px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+.abtstat-contents-div {
+  width: 80%;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.abtstat-c-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  color: rgb(86, 86, 86);
+  & h4 {
+    font-size: 35px;
+  }
+}
+@media (max-device-width: 1000px), (width<1000px) {
+  .abtstat-wrapper {
+    height: max-content;
+  }
+  .abtstat-contents-div {
+    flex-direction: column;
+    padding: 5px 0;
+  }
+}

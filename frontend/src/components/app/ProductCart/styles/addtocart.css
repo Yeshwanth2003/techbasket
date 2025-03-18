@@ -1,0 +1,16 @@
+button.add-to-cart-button {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 5px;
+  outline: none;
+  background-color: inherit;
+  border: 1px solid var(--darkblue);
+  font-weight: bold;
+  color: var(--darkblue);
+  cursor: pointer;
+  transition: 0.6s;
+}
+button.add-to-cart-button:hover {
+  background-color: var(--darkblue);
+  color: white;
+}

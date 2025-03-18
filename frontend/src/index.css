@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --darkblue: #2b448f;
+  --headerbottomcolor: rgba(255, 255, 255, 0.131);
+}
+html {
+  width: 100%;
+  overflow-x: hidden;
+  height: max-content;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  overflow-x: hidden;
+  background-color: #e3e6e6;
+}
+.body-never-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+p {
+  font-size: 16px;
+}
+.custom-link {
+  color: inherit;
+  text-decoration: none;
+}
+/* username */
+.A-U-N {
+  text-transform: uppercase;
+}
+/* M icon */
+.material-symbols-outlined-color {
+  color: white;
+}
+.material-symbols-outlined-size-customized {
+  font-size: var(--iconsize);
+}
+.material-symbols-outlined-custom-color {
+  color: var(--customColor);
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--darkblue);
+  border-radius: 5px;
+}
+/* -----------specially for number-------------- */
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* -----------specially for number-------------- */

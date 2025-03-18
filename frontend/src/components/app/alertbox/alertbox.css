@@ -1,0 +1,33 @@
+.alertbox-wrapper {
+  position: fixed;
+  top: 2%;
+  left: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 10px 10px 0 10px;
+  transition: 0.5s;
+  width: max-content;
+  z-index: 10;
+}
+.alertbox-in {
+  left: calc(100% - 250px);
+}
+.alertbox-symbol {
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 10px 0 0 10px;
+}
+.alertbox-content {
+  padding: 0 30px;
+  color: rgb(149, 149, 149);
+  width: max-content;
+}
+.alertClose {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}

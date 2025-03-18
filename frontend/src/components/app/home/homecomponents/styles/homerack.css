@@ -1,0 +1,31 @@
+.h-HomeRack-wrapper {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.h-HomeRack-hol {
+  width: 98%;
+  background-color: ghostwhite;
+  border-radius: 5px;
+}
+.h-HomeRack-header {
+  padding: 10px 10px;
+  & h2 {
+    color: var(--darkblue);
+  }
+}
+.h-HomeRack-runner {
+  width: max-content;
+  display: flex;
+  gap: 10px;
+  padding: 0 10px;
+}
+.h-HomeRack-content {
+  overflow-x: scroll;
+}
+.h-HomeRack-content::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,21 @@
+.p-seller-table tbody {
+  transform: translateX(100px);
+  animation: ani 1s forwards;
+}
+@keyframes ani {
+  100% {
+    transform: translateX(0);
+  }
+}
+div#pSellerSCB {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-right: 0;
+}
+.p-seller-cb-btn {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

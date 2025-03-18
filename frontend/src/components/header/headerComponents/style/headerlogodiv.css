@@ -1,0 +1,29 @@
+.headerlogodiv-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+.headerlogo-holder-div {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  overflow: hidden;
+}
+.headerlogo-img {
+  width: 250px;
+  height: 60px;
+}
+@media (max-device-width: 1000px), (width<1000px) {
+  .headerlogo-div-search-wrapper {
+    display: none;
+  }
+  .headerlogodiv-wrapper {
+    padding: 5px 0;
+  }
+  .headerlogo-img {
+    width: 150px;
+    height: 50px;
+  }
+}

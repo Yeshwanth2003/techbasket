@@ -1,0 +1,36 @@
+.loading-wrapper {
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & div {
+    width: max-content;
+    heigth: max-content;
+  }
+}
+.l-o-c {
+  position: relative;
+  z-index: -1;
+}
+.l-m-c,
+.l-i-c {
+  position: absolute;
+}
+.l-m-c {
+  bottom: 60%;
+  right: 70%;
+}
+.l-i-c {
+  top: 100%;
+  left: 200%;
+}
+.l-o-c span{
+     transition: 0.5s;
+     animation: rotateani 4s infinite linear;
+}
+@keyframes rotateani {
+     100%{
+          transform: rotate(360deg);
+     }
+}

@@ -1,0 +1,111 @@
+.headerpart3-wrapper {
+  width: 100%;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkblue);
+}
+.headerpart3-wrapper-onscroll {
+  position: fixed;
+  z-index: 10;
+}
+.headerpart3-wrapper-div-search-wrapper {
+  display: none;
+}
+.headerpart3-navbar {
+  display: flex;
+}
+.headerpart3-nav-links {
+  width: max-content;
+  height: max-content;
+  padding: 10px 50px;
+  & ul {
+    display: flex;
+    gap: 20px;
+    & li {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      font-weight: 500;
+      color: white;
+      font-size: 18px;
+      & span:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
+.headerpart3-mob-nav {
+  display: none;
+}
+.headerpart3-only-on-mob-nav-li {
+  display: none;
+}
+@media (max-device-width: 1000px), (width<1000px) {
+  .headerpart3-wrapper-div-search-wrapper {
+    display: contents;
+  }
+  .headerpart3-only-on-mob-nav-li {
+    display: contents;
+  }
+  .headerpart3-nav-links {
+    display: none;
+    height: 0px;
+    transition: 0.5s;
+  }
+  .headerpart3-wrapper {
+    padding: 5px 8px;
+  }
+  /* mobile nav */
+  .headerpart3-mob-nav {
+    display: block;
+    & input {
+      display: none;
+    }
+  }
+  .headerpart3-mob-nav-sym {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: max-content;
+  }
+  .headerpart3-navbar {
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+  }
+  .headerpart3-navbar:has(input:checked) .headerpart3-nav-links {
+    display: block;
+    position: absolute;
+    top: 105%;
+    padding: 20px 0;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    height: max-content;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  .headerpart3-nav-links {
+    padding: 0;
+    & ul {
+      flex-direction: column;
+      gap: 15px;
+      & li {
+        color: var(--darkblue);
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+        padding: 2px 5px;
+        & span:nth-child(2) {
+          display: contents;
+        }
+      }
+    }
+  }
+}
